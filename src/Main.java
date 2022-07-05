@@ -33,11 +33,11 @@ public class Main {
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
-            try (FileWriter writer = new FileWriter(tempTxt)) {
-                writer.write(String.valueOf(log));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        }
+        try (FileWriter writer = new FileWriter(tempTxt)) {
+            writer.write(String.valueOf(log));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
